@@ -1,8 +1,6 @@
 body{
-    div{
     background-image:url("pattern-wide-dashes-flow-diag.png");
     font-family: 'Roboto', sans-serif;
-    }
 }
 p{
     text-align: right;

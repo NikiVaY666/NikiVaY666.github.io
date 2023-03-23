@@ -1,0 +1,22 @@
+body{
+    color:white;
+    background-color: rgb(0, 0, 0);
+}
+p{
+    text-align: right;
+}
+
+h2{
+    text-align: right;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: right;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+em{
+    color: greenyellow;
+
+}

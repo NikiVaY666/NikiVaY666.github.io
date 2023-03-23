@@ -1,6 +1,7 @@
 body{
     color:black;
     background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 p{
     text-align: right;
@@ -19,4 +20,8 @@ h1{
 em{
     color: greenyellow;
 
+}
+
+strong{
+    font-family: 'Caveat', sans-serif;
 }

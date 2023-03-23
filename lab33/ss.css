@@ -20,7 +20,7 @@ h1{
 }
 em{
     color: greenyellow;
-
+    text-decoration-line: double;
 }
 
 strong{

@@ -1,5 +1,6 @@
 body{
-    background-image:url("pattern-wide-dashes-flow-diag.png");
+    background-image: url("pattern-wide-dashes-flow-diag.png");
+    background-color: transparent;    
     font-family: 'Roboto', sans-serif;
 }
 p{

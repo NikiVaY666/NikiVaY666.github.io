@@ -1,7 +1,5 @@
 body{
-    color:black;
-
-    background-image:"pattern-wide-dashes-flow-diag.png";
+    background-image:url("pattern-wide-dashes-flow-diag.png");
     font-family: 'Roboto', sans-serif;
 }
 p{

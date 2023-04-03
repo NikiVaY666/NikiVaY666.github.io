@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+	<head>
 		<meta charset="UTF-8">
-		<title>Оформление вертикального меню</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Awesome меню</title>
 		<style>
 			html {
 					background: #f0f0f0;
 			}
-			
+			.menu ul {
+                    position: relative;
+			}
+
+			.menu li {
+                    list-style: none;
+			}
+			.menu li a {
+                    list-style: none;
+			}
+    		.menu  ul li:hover  li {
+                    list-style: none;
+			}
+            .menu li li:before {
+                    font-family: FontAwesome;
+                    content: "\f2d3";
+                    left: 20px;
+                    margin-left: -20px;
+					
+			}
+            .menu li:before {
+                    font-family: FontAwesome;
+                    left: 20px;
+                    content: "\f146";
+                    position: absolute;
+			}
+
 			.menu {
 					width: 200px;
 					background: #fff;
 			}
-			
-			.menu ul {
-				list-style-image: url(minus.gif);	
-			}
-			
-			.menu li {
-					
-			}
-			
-			.menu li a {
-					
-			}
-			
-			.menu li a:hover {
 
-					
-			}
-			
 			.menu li ul {
-				list-style-image: url(minus.gif);
+                    margin-bottom: 10px;	
 			}
 			
-			.menu li li {
-					
+			.menu li li { 
+                    margin-left: -20px;
 			}
-	</style>
+    </style>
 </head>
 <body>
 	<nav class="menu">

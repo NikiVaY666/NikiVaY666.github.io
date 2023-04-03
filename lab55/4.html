@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Использование float при построении колонок</title>
+<style>
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px calc(1rem - 1px);
+
+    
+}
+
+#left{
+	background:#ccf;
+    width: 200px;
+    order: -1;
+        
+}
+#right{
+	background:#fcc;
+    width: 200px;
+    order: 0;
+    
+    
+        
+}
+#center{
+	background:#cfc;
+     width: 600px; 
+    order: -1;
+    
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+   	<div id="left">left<br>left<br>left<br>left<br>left</div>
+	<div id="right">right<br>right<br>right<br>right</div>
+	<div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
+    </div></body>
+</html>

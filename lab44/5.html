@@ -1,55 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-		<meta charset="UTF-8">
-		<title>Оформление вертикального меню</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Оформление вертикального меню</title>
 		<style>
 			html {
 					background: #f0f0f0;
 			}
 			
 			.menu {
-					width: 200px;
-					background: #fff;
+                padding: 5px;
+				width: 220px;
+				background: #fff;
+				
 			}
 			
 			.menu ul {
-                position: relative;
+			    position: relative;
 				list-style: none;
+		
 			}
-			
 			.menu li {
-                list-style: none;
-			}
+				list-style: none;
+					
+				}
+			.menu li:before {
+				width: 4px;
+				content: '\f0fe';
+				font-family: FontAwesome;
+				color: rgb(12, 5, 211);
+				position: absolute;
+				}
+			
 			
 			.menu li a {
-				list-style: none;
+				color: rgb(42, 74, 170);
+			
 			}
-			.menu li:before {
-				left:200px;
-				background: url('css_sprites.png') -10px -10px no repeat;
-				content: '';
-				height: 14px;
-				width: 15px;
-				position: absolute;
-			}
-			.menu li li:before {
-				background-position: -46px -10px;;
-				left: 20px;
-				margin-left: -20px;
-			}
+			
 			.menu li a:hover {
-				list-style: none;
+				color: #6067e4;
+				
 			}
+
 			
 			.menu li ul {
-                list-style-image: url(point.gif);
+				margin-bottom: 12px;
+				
 			}
-			
-			.menu li li {
-				margin-left: -20px;
+            .menu ul li:hover li {
+				display: block;
+				
+			}
+			.menu li li:before {
+				content: '\f146';
+				background-position: -10px -10px;
+                left: 20px;
+                margin-left: -20px;
+					
+				}
+			.menu li li { 
+                margin-left: -20px;
+                display: none;
 					
 			}
+			
+			
 	</style>
 </head>
 <body>

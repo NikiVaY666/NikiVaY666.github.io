@@ -2,76 +2,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Оформление вертикального меню</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Awesome меню</title>
 		<style>
+            .menu li li:before {
+                    font-family: FontAwesome;
+                    content: "\f2d3";
+                    background-position: 0px -16px;
+                    left: 20px;
+                    margin-left: -20px;
+			}
+
+            .menu li:before {
+                    left: 22px;
+                    width: 4px;
+                    font-family: FontAwesome;
+                    content: "\f146";
+                    position: absolute;
+			}
 			html {
 					background: #f0f0f0;
 			}
 			
 			.menu {
-                padding: 5px;
-				width: 220px;
-				background: #fff;
-				
+					width: 200px;
+					background: #fff;
 			}
 			
 			.menu ul {
-			    position: relative;
-				list-style: none;
-		
-			}
-			.menu li {
-				list-style: none;
-					
-				}
-			.menu li:before {
-				width: 4px;
-				content: '\f0fe';
-				font-family: FontAwesome;
-				color: rgb(12, 5, 211);
-				position: absolute;
-                left: 20px;
-				}
-			
-			
-			.menu li a {
-				color: rgb(42, 74, 170);
-			
-			}
-			
-			.menu li a:hover {
-				color: #6067e4;
-				
+                    position:relative;
+                    list-style: none;
 			}
 
+			.menu li {
+                    list-style:none;
+			}
+			
+			.menu li a {
+                    list-style: none;
+			}
 			
 			.menu li ul {
-				margin-bottom: 12px;
-				
+                    margin-bottom: 10px;
 			}
-            .menu ul li:hover li {
-				display: block;
-				
-			}
-			.menu li li:before {
-				content: '\f146';
-				background-position: -10px -10px;
-                left: 20px;
-                margin-left: -20px;
-					
-				}
+			
 			.menu li li { 
-                margin-left: -20px;
-                display: none;
-					
+                    margin-left: -20px;
+					    display: none;
 			}
-			
-			
-	</style>
+
+    		.menu  ul li:hover  li {
+					display: block;
+			}
+    </style>
 </head>
 <body>
 	<nav class="menu">

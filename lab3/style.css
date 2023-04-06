@@ -1,26 +1,15 @@
-body{
-   
-    font-family: 'Roboto', sans-serif;
-}
-p{
+body {
+    background: #030000;
+    color: rgb(255, 255, 255);
+   }
+   h1, h2 {
+    color: rgb(194, 4, 4);
+    font-family: Arial;
     text-align: right;
-}
-
-h2{
-    text-align: right;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    text-align: right;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-}
-em{
-    color: greenyellow;
-    text-decoration-line: double;
-}
-
-strong{
-    font-family: 'Caveat', sans-serif;
-}
+   }
+   p{
+    text-align:right;
+   }
+   em{
+    color: rgb(0, 209, 0);
+   }

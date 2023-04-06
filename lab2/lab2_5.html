@@ -1,43 +1,81 @@
-<html>
-<head>
-<meta charset="utf-8">
-<title>форма</title>
-</head>
-<body>
-    
-    <form>
-        <table>
-            <tbody>
-    <tr><th><label for="name">E-mail</label></th>
-        <th><input type="text" name="name" placeholder="popka@mail.sru" id="name" required></th>
- <tr><th><label for="name">Пароль</label></th>
-    <th><input type="text" name="name" placeholder="води пороль это не скам" id="name" required></th></tr>
-    
-    <tr><th><a href="anekdot.html">Пол( 2 гендара)</form></a></th><th><input type="radio" name="radio" checked>
-    <label for="front">Мужчина</label>
-    <input type="radio" name="radio">
-    <label for="back">женщина</label></th></tr>
 
-  <tr><th> <label for="date">Дата рождения: </label> </th><th> <input type="date"></th></tr>
-      
-  <tr><th>Я знаю</th><th><input type="checkbox" checked>
-        <label for="courses">Русский</label>
-        <br> <input type="checkbox" checked>
-       <label for="courses">Английский</label>
-       <br> <input type="checkbox" checked>
-        <label for="courses">Немецкий</label>
-        <br> <input type="checkbox" checked>
-        <label for="courses">Испанский</label>
-        <br> <input type="checkbox" checked>
-        <label for="courses">Французкий</label></th></tr> 
-  <tr><th><label for="message">обо мне</label></th><th> <textarea name="comment" placeholder="напиши коротко о себе" id="message"></textarea></th></tr>
-  <tr><th><button type="submit">Отправить</button> </th></tr>
- 
-
-  
-    </tbody> </table>  </form>
-
-
-    
-</body>
+<!DOCTYPE html>
+<html lang="ru">
+        <head>
+        <meta charset="utf-8">
+        <title>Форма</title>
+        <style>
+            table {
+                width: 400px;
+                border: 0px solid rgb(42, 16, 99);
+                margin: 15px;
+                float:left
+            }
+            td, th {
+                border: 0px solid rgb(42, 16, 99);
+                padding: 5px;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Форма регистрации пользователя</h1>
+        
+              <form action="#">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th><label for="name_1"> E-mail</label></th>
+                            <td><input type="email" id = "name_1" name="first_email" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="name_2">Пароль</label></th>
+                            <td><input type="password" id = "name_2" name="first_password"></td>
+                        </tr>
+                        <tr>
+                            <th>Пол</th>
+                            <td><label>
+                                <input type="radio" name="status"> Мужчина
+                            </label>
+                            <label>
+                                <input type="radio" name="status"> Женщина
+                            </label></td>
+                        </tr>
+                        <tr>
+                            <th>Дата рождения:</th>
+                                <td><label><input type="date"></label></td>
+                        </tr>
+                        <tr>
+                            <th>Я знаю:</th>
+                            <td> 
+                                <label>
+                                    <input type="checkbox" name="Английский" id="Английский" value="yes">Английский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Русский" id="Русский" value="yes">Русский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Испанский" id="Испанский" value="yes">Испанский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Китайский" id="Китайский" value="yes">Китайский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Немецкий" id="fr" value="yes">Немецкий<br>
+                                </label>
+                            </td>
+                                
+                        </tr>
+                        <tr>
+                            <th><label for="message">Обо мне</label></th><th> <textarea name="comment" placeholder="Напиши коротко о себе" id="message"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><button type = "submit">Готово</button>
+                                <button type="reset">Очистить</button>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </body>
 </html>

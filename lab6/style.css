@@ -1,0 +1,15 @@
+body {
+    background: #030000;
+    color: rgb(255, 255, 255);
+   }
+   h1, h2 {
+    color: rgb(231, 10, 10);
+    font-family: Arial;
+    text-align: right;
+   }
+   p{
+    text-align:right;
+   }
+   em{
+    color: rgb(31, 231, 31);
+   }

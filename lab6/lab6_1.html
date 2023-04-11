@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Главная страница</title>
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<style>
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#container {
+    width: 800px;
+    height: 400px;
+    border: 8px solid #ffffff;
+    text-align: left;
+}
+#left{
+	background-image: url(left.png) !important;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #ffffff;
+}
+#right{
+	background-image: url(right.png) !important;
+    float: right;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #ffffff;
+}
+#header{
+    background: #CCDDEE;
+    height: 90px;
+    border: 8px solid #ffffff;
+}
+#center{
+	background:rgb(255, 255, 255);
+	display:flex;
+    height: 200px;
+    border: 8px solid #ffffff;
+    margin: 3px;
+}
+#end{
+    background: #DDCCEE;
+    height: 100px;
+    border: 6px solid #ffffff;
+}
+li {
+    list-style-image: url(plus.png);
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="header"></div>
+	<div id="outer">
+		<div id="inner">
+			<div id="left">
+				<ul>
+					<li><a href="#">Камень</a></li>
+					<li><a href="#">Ножницы</a></li>
+					<li><a href="#">Бумага</a></li>
+				</ul>
+			</div>
+			<div id="right">right</div>
+			<div id="center">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center</div>
+			<div id="end"></div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</div>
+</body>
+</html>

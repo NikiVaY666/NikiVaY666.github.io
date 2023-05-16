@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        let num=prompt("Введите число");
+        let k;
+        var lst=[];
+        for( let i = 2;  i<=num; i++)
+        {
+            k=0
+            for (let j=2; j<i; j++)
+            {
+                if (i%j==0) k+=1;
+            }
+            if (k==0)
+            {
+                lst.push(i)
+            }
+        }
+        alert("Все простые числа до " +num+ ": " +lst);
+    </script>
+</body>
+</html>   

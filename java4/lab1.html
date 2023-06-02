@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    "use strict";
+    function isEmpty(obj) {
+      return obj.hasOwnProperty()
+    }
+    let book1 = new Object(); // синтаксис "конструктор объекта"
+    book1 = {
+      title: "Vladimer putin za popedu ",
+      pubYear: 2002,
+      price: 284,
+      show: function () {
+        console.log(this.title);
+        console.log(this.price);
+      }
+    };
+    console.log(isEmpty(book1));
+    let book2 = new Object();
+    book2.title = 'obychnaya book';
+    book2.pubYear = 1990;
+    book2.price = 200;
+    for (let i in book2) console.log(book2[i]);
+    console.log(isEmpty(book2));
+    book1.show();
+    book2.show = function showBook() {
+      console.log(this.title);
+      console.log(this.price);
+    }
+    book2.show();
+  </script>
+</body>
+
+</html>
+</script>
+</body>
+
+</html>

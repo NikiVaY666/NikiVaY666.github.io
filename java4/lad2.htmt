@@ -23,7 +23,7 @@ obj.addClass = function addClass(cls) {
 }
 
 obj.addClass('NEW'); // open menu new
-obj.addClass('Privet my frend'); // open menu new Zdravstvyite
+obj.addClass('Privet my frend'); // open menu new Privet my frend
 obj.addClass('open');  // без изменений 
 
 console.log(obj.className);

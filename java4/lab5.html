@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function formatDate(date) {
+
+    var dd = date.getDate();
+    if (dd < 10) dd = '0' + dd;
+  
+    var mm = date.getMonth() + 1;
+    if (mm < 10) mm = '0' + mm;
+  
+    var yy = date.getFullYear() % 100;
+    if (yy < 10) yy = '0' + yy;
+  
+    return dd + '.' + mm + '.' + yy;
+  }
+  
+  var d = new Date(2003, 08, 29); // 29 Сент 2003
+  console.log( formatDate(d) ); // '29.09.03'
+  let now = new Date();
+let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+console.log(`Сегодня ${formatDate(today)}`)
+    </script>
+</body>
+</html>

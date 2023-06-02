@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +6,10 @@
 </head>
 <body>
     <script>
-        let vasya = { name: "Вася", age: 23 };
-let masha = { name: "Маша", age: 18 };
-let vova = { name: "Вова", age: 12 };
-let people = [ vasya , masha , vova ];
+        let vasya = { name: "Даняяяяяя", age: 19 };
+let masha = { name: "Серегей", age: 20 };
+let vova = { name: "Вова", age: 70 };
+let people = [ 'danya' , 'serega' ,'vova' ];
 function Sorted(a, b) {
             return a.age - b.age;
         }

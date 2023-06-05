@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Text</title>
+</head>
+<body>
+	<input type="button" id="hider" value="Спрятать текст">
+
+	<div id="text">Текст</div>
+
+	<script>
+    /* ваш код */
+    document.getElementById('hider').onclick = function(){
+			if (document.getElementById('text').style.display != 'none') {
+				document.getElementById('text').style.display = 'none';
+				document.getElementById('hider').value = 'Показать текст';
+			} else {
+				document.getElementById('text').style.display = 'block';
+				document.getElementById('hider').value = 'Спрятать текст';
+			}
+    }
+	</script>
+</body>
+</html>

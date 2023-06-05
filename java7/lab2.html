@@ -4,19 +4,23 @@
  <head>
   <meta charset="utf-8">
   <title>data-*</title>
+  <style>
+     select:invalid { color: blue; }
+     </style>
  </head>
  <body>
   <div id="user" data-id="1234567890" 
        data-user="Вася Пупкин" 
        data-date-of-birth="01.04.1990">Пользователь</div>
   <script>
-   var el = document.getElementById('user');
-   id = el.dataset.id; // Получаем значение атрибута data-id
-   user = el.dataset.user;
-   dob = el.dataset.dateOfBirth; // Получаем значение атрибута data-date-of-birth
-   el.dataset.ban = 'Нет'; // Назначаем новый атрибут data-ban и его значение
-   console.log(user); // Выводим в консоль значение переменной user
-   console.log(dob); // Выводим в консоль значение переменной dob
+
+<form>
+<select required>
+    <option value="" disabled selected hidden>типо подсказка</option>
+    <option value="0">вариант 1</option>
+    <option value="1">вариант 2</option>
+</select>
+</form>
   </script>
  </body>
 </html>

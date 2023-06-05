@@ -9,7 +9,7 @@
       area.hidden = true;
     
       document.onkeydown = function (e) {
-        if (e.ctrlKey && e.keyCode == '69'){
+        if (e.ctrlKey && e.keyCode == '69'){  //69 = e
           view.hidden = true;
           area.hidden = false;
           area.focus()
@@ -17,7 +17,7 @@
           return false;
         }
     
-        if (e.ctrlKey && e.keyCode == '83'){
+        if (e.ctrlKey && e.keyCode == '83'){ //83 = s
           view.hidden = false;
           area.hidden = true;
           //alert(area.value);
@@ -27,6 +27,7 @@
           view.hidden = false;
           area.hidden = true;
         }
+        //27 = esc
       };
         
     </script>

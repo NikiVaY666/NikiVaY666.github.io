@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>List</title>
+  <meta charset="UTF-8">
+  <title>List</title>
 </head>
+
 <body>
   <ul>
     <li>Животные
@@ -45,13 +46,14 @@
   </ul>
 
   <script>
-	/* ваш код */
-        let a = document.body.getElementsByTagName("li");
-        for (let i = 0; i < a.length; i++) {
-            let name = a[i].firstChild.nodeValue.trim();
-            let count = a[i].getElementsByTagName("li").length; 
-            console.log(`${name}: ${count}`);
-        }
+    /* ваш код */
+    let a = document.body.getElementsByTagName("li");
+    for (let i = 0; i < a.length; i++) {
+      let name = a[i].firstChild.nodeValue.trim();
+      let count = a[i].getElementsByTagName("li").length;
+      console.log(`${name}: ${count}`);
+    }
   </script>
 </body>
+
 </html>

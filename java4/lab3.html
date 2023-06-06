@@ -1,18 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let danya = { name: "даня", age: 19 };
-let serega = { name: "серега", age: 20 };
-let vova = { name: "Вова", age: 70 };
-let people = [ danya , serega , vova ];
-function Sorted(a, b) {
+        'use strict'
+        let vasya = { name: "Вася", age: 23 };
+        let masha = { name: "Маша", age: 18 };
+        let vova = { name: "Вова", age: 12 };
+        let people = [vasya, masha, vova];
+        function Sorted(a, b) {
             return a.age - b.age;
         }
         people.sort(Sorted);
@@ -20,4 +22,5 @@ function Sorted(a, b) {
         for (let i in people) console.log(people[i]);
     </script>
 </body>
+
 </html>

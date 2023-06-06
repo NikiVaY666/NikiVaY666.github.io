@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-
+        'use strict'
         function formatDate(date) {
 
-    var dd = date.getDate();
-    if (dd < 10) dd = '0' + dd;
-  
-    var mm = date.getMonth() + 1;
-    if (mm < 10) mm = '0' + mm;
-  
-    var yy = date.getFullYear() % 100;
-    if (yy < 10) yy = '0' + yy;
-  
-    return dd + '.' + mm + '.' + yy;
-  }
-  
-  var d = new Date(2003, 08, 29); // 29 Сент 2003
-  console.log( formatDate(d) ); // '29.09.03'
-  let now = new Date();
-let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-console.log(`Сегодня ${formatDate(today)}`)
+            let d = date.getDate();
+            if (d < 10) d = '0' + d;
+
+            let m = date.getMonth() + 1;
+            if (m < 10) m = '0' + m;
+
+            let y = date.getFullYear() % 100;
+            if (y < 10) y = '0' + y;
+
+            return d + '.' + m + '.' + y;
+        }
+        let d = new Date(2003, 8, 29); // 29 cент 2003
+        console.log(formatDate(d)); // '29.09.2003'
     </script>
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,38 +9,39 @@
 <body>
     <script>
     "use strict"
-let obj = {
-    className: 'open menu'
-}
+    let obj = {
+    className: 'open menu',
+    addClass: function(cls) {
+        let arr = this.className.split(" ");
+        if (!arr.includes(cls)) {
+            arr.push(cls)
+        }
+        this.className = arr.join(" ");
+        return this;
+    },
 
-obj.addClass = function addClass(cls) {
-    let arr = this.className.split(" ");
-    if (!arr.includes(cls)) {
-        arr.push(cls)
+    removeClass: function(cls) {
+        let arr = this.className.split(" ");
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == cls) {
+                arr.splice(i, 1);
+                i--;
+            }
+        }
+        obj.className = arr.join(' ');
+        return this;
     }
-    this.className = arr.join(" ");// присваеваем свойству объекта, новый список классов
 }
 
-obj.addClass('NEW'); // open menu new
-obj.addClass('Privet my frend'); // open menu new Privet my frend
+obj.addClass('NEW'); // open menu NEW
+obj.addClass('hi'); // open menu NEW hi
 obj.addClass('open');  // без изменений 
 
 console.log(obj.className);
 
-obj.removeClass = function removeClass(cls) {
-    let arr = this.className.split(" ");
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == cls) {
-            arr.splice(i, 1);
-            i--;
-        }
-    }
-    obj.className = arr.join(' ');
-}
-
-obj.removeClass('Nikiva'); // без изменений
-obj.removeClass('NEW'); // open menu Privet my frend
-obj.removeClass('open'); // menu Privet my frend
+obj.removeClass('NikiVa'); // без изменений
+obj.removeClass('NEW'); // open menu hi
+obj.removeClass('open'); // menu hi
 
 console.log(obj.className);
     </script>

@@ -1,25 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        'use strict'
         function getSecondsToday() {
-  let now = new Date();
+            let now = new Date();
+            return now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+        }
 
-  // создаём объект с текущими днём/месяцем/годом
-  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
-  let diff = now - today; // разница в миллисекундах
-  return Math.round(diff / 1000); // получаем секунды
-}
-
-console.log( getSecondsToday() );
+        console.log(`С начала дня прошло ${getSecondsToday()} секунд`);
 
     </script>
 </body>
+
 </html>

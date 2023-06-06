@@ -1,23 +1,45 @@
 
+<!DOCTYPE HTML>
+<html lang="ru">
 
-    
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>data-*</title>
-  <style>
-     select { color: rgb(63, 215, 235); }
-     </style>
- </head>
- <body>
-  <select data-placeholder="Select a state">боба
-    <option value="" disabled selected hidden>Выберете одно из 2</option>
-    <option value="0">Поставить Басихину 5</option>
-    <option value="1">поставить басихину 5+</option>
-  </select>
+<head>
+    <meta charset="UTF-8" />
+    <title>data-placeholder</title>
 
-</form>
-  </script>
- </body>
+    <style>
+        ::placeholder {
+            color: rgb(94, 94, 219);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="gmail">
+        <label></label>
+        <input type="email" data-placeholder="name@gmail.com" />
+    </div>
+    <script>
+        'use strict';
+        let tf = document.getElementById("gmail");
+
+        let input = tf.getElementsByTagName("input")[0];
+        let lb = tf.getElementsByTagName("label")[0];
+        lb.style.display = "none";
+
+        input.setAttribute("placeholder", input.dataset.placeholder); //setAttribute добавляет атрибут или изменяет значение существующего атрибута в выбранном элементе.
+        lb.innerHTML = input.dataset.placeholder;
+
+        input.addEventListener("blur", function () {
+            lb.style.display = "none";
+            input.setAttribute("placeholder", input.dataset.placeholder);
+        });
+
+        input.addEventListener("focus", function () { //addEventListener устанавливает функцию, которая будет вызываться всякий раз, когда указанное событие доставляется цели
+            lb.style.display = "block";
+            input.setAttribute("placeholder", "");
+        });
+    </script>
+</body>
+
 </html>

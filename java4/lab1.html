@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -14,11 +13,10 @@
     function isEmpty(obj) {
       return obj.hasOwnProperty()
     }
-    let book1 = new Object(); // синтаксис "конструктор объекта"
-    book1 = {
-      title: "Vladimer putin za popedu ",
-      pubYear: 2002,
-      price: 284,
+    let book1 = {
+      title: "Божественная комедия",
+      pubYear: 901,
+      price:200,
       show: function () {
         console.log(this.title);
         console.log(this.price);
@@ -26,16 +24,17 @@
     };
     console.log(isEmpty(book1));
     let book2 = new Object();
-    book2.title = 'obychnaya book';
-    book2.pubYear = 1990;
-    book2.price = 200;
+    book2.title = 'Шерлок';
+    book2.pubYear = 2009;
+    book2.price = 230;
     for (let i in book2) console.log(book2[i]);
     console.log(isEmpty(book2));
-    book1.show();
-    book2.show = function showBook() {
+    function showBook() {
       console.log(this.title);
       console.log(this.price);
     }
+    book1.show();
+    book2.show = showBook;
     book2.show();
   </script>
 </body>

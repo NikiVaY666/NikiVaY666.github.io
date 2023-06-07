@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
 </head>
+
 <body>
     <script>
         "use strict"
-        let num;
-        do{
-             num = prompt("Вводи число, большее 100");
+        while (true) {
+            var a = prompt('Введите число больше 100', '');
+            if (a > 100 || a == null) break
         }
-        while (num <= 100 && num);
-        alert("Молодец!");
-
     </script>
 </body>
-</html>   
+
+</html>

@@ -86,10 +86,12 @@ export function  fibs(n){
  * @param {Array} arr массив элементов.
  * @return {Array} arr, массив, отсортированный по убыванию.
  */
-export function arrReverseSorted(arr){
-    let arrr = arr.sort(function(a,b){return a-b})
-    document.writeln(arrr)
-  }
+export function arrReverseSorted(arr) { 
+    let arr_copy = arr.slice(); 
+    return arr_copy.sort(function (a, b) { 
+        return b - a; 
+    }) 
+}
 
 /**
  * Возвращает массив уникальных, не повторяющихся значений.

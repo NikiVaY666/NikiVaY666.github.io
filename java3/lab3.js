@@ -1,3 +1,4 @@
+"use strict";
 import {
     fib
 } from './lab2.js';
@@ -85,10 +86,8 @@ export function  fibs(n){
  * @param {Array} arr массив элементов.
  * @return {Array} arr, массив, отсортированный по убыванию.
  */
-export function  arrReverseSorted(arr){
-    return arr.sort(function (a, b) {
-        return b - a;
-    })
+export function arrReverseSorted(arr){
+    return arr.sort((a, b) => b - a);
 }
 /**
  * Возвращает массив уникальных, не повторяющихся значений.

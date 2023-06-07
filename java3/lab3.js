@@ -90,7 +90,7 @@ export function arrReverseSorted(arr){
     let arrr = arr.sort(function(a,b){return a-b})
     document.writeln(arrr)
   }
-}
+
 /**
  * Возвращает массив уникальных, не повторяющихся значений.
  *
